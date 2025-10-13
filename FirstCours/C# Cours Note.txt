@@ -1,0 +1,127 @@
+C# Cours Note
+
+
+Le c# est un language de programmation "modern" crée en 2000 orienté objet et fortement typé developpé par Microsoft.
+
+il fait parti intergrante du .net et developpement informatique tel que jeu video, application ou meme au web. 
+
+c# combine la puissance des language de bas niveau ( C C++) mais il a une simplicité d'utilisation et gestion de memoir comme java.
+
+grace a ca polyvalence et son large eventail d'application,  il est devenu l'un des language les plus utiliser dans le developpement software
+
+c# est une alternative a java pour la platform web 
+
+c# est plus seulement utiliser pour des application windows c'est aussi utiliser dans le web ASP.net, dev mobile : Xamarin , jeu video : Unity, Cloud : Azure, Microservices et API (language de base .NET)
+
+
+c'est un language orienté objet c'est donc le polymorphism, les class, l'heritage et l'encapsulation sont au centre du language.
+
+le C# est fortement typé : chaque variable a un type clair et ne peux pas etre change facilement.
+
+C# utiliser un garbage collector qui gere automatiquement la memoir non utilisé ce qui simplifie la la gestion de la memoire et les fuite memoire. (comme unreal)
+
+C# garantie la securité des types ce qui signifie que toutes les convertion entre type doivent etre explicite ou controlé par le compilateur.
+
+
+platform.net framework 
+
+est une platform crée par Microsoft  qui fournis des outils et biblioteque pour construire des application de bureau/web/mobile.
+
+c'est l'une des premieres application windows qui inclus Common Language Runtime (CLR) environnement d'excution du code .net qui gere l'execution, il assure la gestiontion de la memoire, la compilation et la securité du code.
+
+Il inclus aussi la biblioteque de classes de bases ( Base class library - BCL) collection de class, d'espace de nom et d'api pour le dev.
+
+et enfin il inclus le support de plusieurs langage ( C#, VB.net, F#) 
+
+Le CLR il compile le code IL (language intermédiaire)
+
+Framework class library (FCL) l'ensemble des biblioteque que nous allons inclure dans nos codes.
+
+WindowsForm (WinForms) et Windows Presentation Foundation (WPF) technologie qui permet de crée des applications sous windows WPF est plus modern est plus riche que WinForms.
+
+ASP.NET qui est un framework utiliser pour developer des application web.
+
+
+Microsoft a lancer .net Core en 2016 qui est multiplatform qui est plus optimisé du .NetFramework.
+
+Depuis .Net 5 Microsoft a unifier .Net Core et .Net famework qui s'appelle .NET
+
+on utiliser .Net Framework si on developpe que pour windows ou si on travail sur une application deja existante on travail sur .net core
+
+si l'on souhaite profité des derniere modification du moteur on utilize .NET Core
+
+Using est l'equivalent des "Include" 
+
+le namespace est un conteneur logique utiliser pour organizer et structurer le code en regroupant (class,enum,interface et delegate) il permet egalement eviter les conflits de nom surtout dans les grands projets. il aident a moduler plus facilement et aide la reutilisabiliter.
+
+fullicalify 
+
+le framework.net inclue des namespace courant et utilise de base (using system les type de base) string, console, datetime.
+
+System.Collection.generic il contient les collection generique tel que dictionary, list...
+
+System.IO contien des class pour la gestion de fichier et des flux. comme les class files, stream.
+
+System.Net contien des class pour la gestion reseau.
+
+il est possible de crée un alias de namespace  ( using "nom alias" = namespace nom)
+
+Internal class : modificateur d'acces utilizer pour specifier que les member d'une classe sont accessible au sein de l'assemblie dans lequel ils sont definis 
+
+un element marqué internal est lisible uniquement dans le ficher ou dossier compile. il n'est pas lisible pas les autres DLL.
+
+une classe marqué comme internal ne peux pas etre herité ailleurs que dans la classe ou elle est.
+
+on peut rentre une methode Internal, elle sera appeller seulement dans la clase actuelle
+
+public: accessible n'importe ou. interieur et exterieur de l'assembli.
+
+protected internal: accessible dans l'assembli et les classe dérivé.
+
+toujours existante et unique!
+Main s'ecrit toujours static. sinon le programme ne se lance pas. (Static void/int Main()) peut pas recevoir d'autre parameter que tableau de string (string[] _args)
+
+si une variable n'est pas utilisé elle est grisé. 
+
+const existe encore en c# 
+
+la const ne peux pas bouger un fois créer. elle peut etre modifier qu'a la declaration.
+
+le const en C#est static, ca veut dire qu'il a la meme Valeur pour toute mes classe
+
+readonly est une const allégée.
+
+l'encapsulation se fait sur chaque classes, chaque function, chaque declaration.
+
+On fait tout dans le meme fichier.
+
+les accesseur sont des propriété, on distingue les variable (champs) des propriétées (accesseurs)  
+
+
+
+
+ 
+ public int Age
+ {
+     get
+     {
+         return age;
+     }
+}
+
+public string Name => name + "yes" 
+
+Meme chose entre en haut et en bas.
+
+toujour initialiser les variables (jamais les laisser vide)
+
+Value est toujours valable il prendra toujours le type besoin. 
+
+StackOverFlow ! Regarder mes accesseur si j'ai pas une recursive infini
+
+
+
+
+
+
+
