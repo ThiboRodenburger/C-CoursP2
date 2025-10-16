@@ -16,9 +16,9 @@ public class CarFactory : Factory <Vehicle>
     }
 
 
-    public override event Action OnStartProduction = null;
-    public override event Action OnStopProduction = null;
-    public override event Action OnVehicleProduced = null;
+    //public override event Action OnStartProduction = null;
+    //public override event Action OnStopProduction = null;
+    //public override event Action OnVehicleProduced = null;
 
     FTempCarModel tempCar= new FTempCarModel();
 
@@ -38,16 +38,16 @@ public class CarFactory : Factory <Vehicle>
         };
     }
 
-    public override Vehicle CreatVehicle()
-    {
-        OnStartProduction?.Invoke();
-        Console.WriteLine("Car Manufacturing");
-        SelectColor();
-        Car _car = new Car(tempCar);
-        allVehicles.Add(_car);
-        OnStopProduction?.Invoke();
-        OnVehicleProduced?.Invoke();
-        return _car; 
-    }
+    //public override Vehicle CreatVehicle()
+    //{
+    //    OnStartProduction?.Invoke();
+    //    Console.WriteLine("Car Manufacturing");
+    //    SelectColor();
+    //    Car _car = new Car(tempCar);
+    //    allVehicles.Add(_car);
+    //    OnStopProduction?.Invoke();
+    //    OnVehicleProduced?.Invoke();
+    //    return _car; 
+    //}
 }
 

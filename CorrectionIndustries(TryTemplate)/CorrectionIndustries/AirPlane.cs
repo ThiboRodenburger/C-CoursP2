@@ -22,7 +22,7 @@ public class AirPlane : Vehicle
         Passengers = _passengers;
     }
 
-    public AirPlane(AirPlaneFactory.FTempPlaneModel _model) : base(_model.Color) 
+    public AirPlane(Factory<Vehicle>.FTempVehicleModel _model) : base(_model.Color) 
     {
         Engines = _model.Engines;
         Passengers = _model.Passengers;

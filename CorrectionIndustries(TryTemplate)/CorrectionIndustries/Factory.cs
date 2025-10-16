@@ -5,11 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-public abstract class Factory <T>
+public class Factory <T>
 {
-    public abstract event Action OnStartProduction;
-    public abstract event Action OnStopProduction;
-    public abstract event Action OnVehicleProduced;
+    public struct FTempVehicleModel
+    {
+        public EVehicleColor Color;
+        public int Engines;
+        public int Passengers;
+        public int Doors;
+    }
+
+    public event Action OnStartProduction;
+    public event Action OnStopProduction;
+    public event Action OnVehicleProduced;
 
     public event Action OnEndReadVehicles = null;
 
@@ -19,6 +27,8 @@ public abstract class Factory <T>
     public T this[int _index] => allVehicles[_index];
     public int Count => allVehicles.Count;
     public string Name { get; private set; } = "Factory";
+
+    FTempVehicleModel tempVehicle = new FTempVehicleModel();
 
     public Factory() { }
     public Factory(string _name)
@@ -37,7 +47,18 @@ public abstract class Factory <T>
         Console.WriteLine("Stop");
     }
 
-    public abstract T CreatVehicle();
+    public  T CreatVehicle()
+    {
+        OnStartProduction?.Invoke();
+        Console.WriteLine("Car Manufacturing");
+        SelectColor();
+        T _vehicle = new T(tempVehicle);
+        allVehicles.Add(_vehicle);
+        OnStopProduction?.Invoke();
+        OnVehicleProduced?.Invoke();
+        return _vehicle;
+    }
+
 
     public void DisplayStock()
     { 

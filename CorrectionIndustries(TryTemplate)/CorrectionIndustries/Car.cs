@@ -19,7 +19,7 @@ public class Car : Vehicle
         Doors = _doors;
     }
 
-    public Car(CarFactory.FTempCarModel _model)
+    public Car(Factory<Vehicle>.FTempVehicleModel _model)
     {
         Color = _model.Color;
         Doors = _model.Doors;

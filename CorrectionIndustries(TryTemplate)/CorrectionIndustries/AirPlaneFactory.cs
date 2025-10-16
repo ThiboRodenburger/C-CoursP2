@@ -14,9 +14,9 @@ public class AirPlaneFactory : Factory <Vehicle>
         public int Passengers;
     }
 
-    public override event Action OnStartProduction = null;
-    public override event Action OnStopProduction = null;
-    public override event Action OnVehicleProduced = null;
+    //public override event Action OnStartProduction = null;
+    //public override event Action OnStopProduction = null;
+    //public override event Action OnVehicleProduced = null;
 
 
     FTempPlaneModel tempPlane = new FTempPlaneModel();
@@ -46,14 +46,14 @@ public class AirPlaneFactory : Factory <Vehicle>
 
     } 
 
-    public override Vehicle CreatVehicle()
-    {
-        OnStartProduction?.Invoke();
-        AirPlane _plane = new AirPlane(tempPlane);
-        allVehicles.Add(_plane);
-        OnStopProduction?.Invoke();
-        OnVehicleProduced?.Invoke();
-        return _plane;  
-    }
+    //public override Vehicle CreatVehicle()
+    //{
+    //    OnStartProduction?.Invoke();
+    //    AirPlane _plane = new AirPlane(tempPlane);
+    //    allVehicles.Add(_plane);
+    //    OnStopProduction?.Invoke();
+    //    OnVehicleProduced?.Invoke();
+    //    return _plane;  
+    //}
 }
 
