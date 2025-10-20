@@ -1,0 +1,4 @@
+C:\Users\thibo\Documents\cours p1\MyLib\MyLib\obj\Debug\net9.0\MyLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thibo\Documents\cours p1\MyLib\MyLib\obj\Debug\net9.0\MyLib.AssemblyInfoInputs.cache
+C:\Users\thibo\Documents\cours p1\MyLib\MyLib\obj\Debug\net9.0\MyLib.AssemblyInfo.cs
+C:\Users\thibo\Documents\cours p1\MyLib\MyLib\obj\Debug\net9.0\MyLib.csproj.CoreCompileInputs.cache
