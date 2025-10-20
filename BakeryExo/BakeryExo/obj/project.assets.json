@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\RODE2103\\.nuget\\packages\\": {},
+    "C:\\Users\\thibo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ThiboRP2\\CSharp_Cours2025\\Base\\BakeryExo\\BakeryExo\\BakeryExo.csproj",
+      "projectUniqueName": "C:\\Users\\thibo\\Documents\\Unreal Projects\\C-CoursP2\\BakeryExo\\BakeryExo\\BakeryExo.csproj",
       "projectName": "BakeryExo",
-      "projectPath": "D:\\ThiboRP2\\CSharp_Cours2025\\Base\\BakeryExo\\BakeryExo\\BakeryExo.csproj",
-      "packagesPath": "C:\\Users\\RODE2103\\.nuget\\packages\\",
-      "outputPath": "D:\\ThiboRP2\\CSharp_Cours2025\\Base\\BakeryExo\\BakeryExo\\obj\\",
+      "projectPath": "C:\\Users\\thibo\\Documents\\Unreal Projects\\C-CoursP2\\BakeryExo\\BakeryExo\\BakeryExo.csproj",
+      "packagesPath": "C:\\Users\\thibo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thibo\\Documents\\Unreal Projects\\C-CoursP2\\BakeryExo\\BakeryExo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\RODE2103\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thibo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -51,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

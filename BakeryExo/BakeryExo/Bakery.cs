@@ -113,13 +113,44 @@ public class Bakery
 
     public void Save(string _path)
     { 
-        File.WriteAllText(_path, $"Bread : {Bread}, Flour : {Flour}kg, Gold : {Gold}");
+        File.WriteAllText(_path, $"[Bread] : {Bread}, [Flour] : {Flour}kg, [Gold] : {Gold}");
         OnEndSaveBakery?.Invoke();
     }
 
     public Bakery LoadSave(string _path)
     {
-        File.ReadAllText(_path);
+        if (!File.Exists(_path))
+        {
+            throw new FileNotFoundException($"Le fichier '{_path}' est introuvable.");
+        }
+
+        // Lit le contenu du fichier
+        string data = File.ReadAllText(_path);
+
+        // Exemple de format : Bread:10;Flour:20;Gold:5
+        string[] parts = data.Split(';');
+        foreach (string part in parts)
+        {
+            string[] keyValue = part.Split(':');
+            if (keyValue.Length != 2) continue;
+
+            string _key = keyValue[0].Trim();
+            string _value = keyValue[1].Trim();
+
+            switch (_key)
+            {
+                case "Bread":
+                    Bread = int.Parse(_value);
+                    break;
+                case "Flour":
+                    Flour = int.Parse(_value);
+                    break;
+                case "Gold":
+                    Gold = int.Parse(_value);
+                    break;
+            }
+        }
+
         OnEndReadBakerySupply?.Invoke();
         return this;
     }
