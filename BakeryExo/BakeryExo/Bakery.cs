@@ -124,18 +124,16 @@ public class Bakery
             throw new FileNotFoundException($"Le fichier '{_path}' est introuvable.");
         }
 
-        // Lit le contenu du fichier
-        string data = File.ReadAllText(_path);
+        string _data = File.ReadAllText(_path);
 
-        // Exemple de format : Bread:10;Flour:20;Gold:5
-        string[] parts = data.Split(';');
-        foreach (string part in parts)
+        string[] _parts = _data.Split(',');
+        foreach (string _part in _parts)
         {
-            string[] keyValue = part.Split(':');
-            if (keyValue.Length != 2) continue;
+            string[] _keyValue = _part.Split(',');
+            if (_keyValue.Length != 2) continue;
 
-            string _key = keyValue[0].Trim();
-            string _value = keyValue[1].Trim();
+            string _key = _keyValue[0].Trim();
+            string _value = _keyValue[1].Trim();
 
             switch (_key)
             {
